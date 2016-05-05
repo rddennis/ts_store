@@ -9,6 +9,12 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+
+  # Default URL for action mailer
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # TODO: Set default url for action mailer in production
+  # config.action_mailer.default_url_options = { host: 'actual host for domain' }
+
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
