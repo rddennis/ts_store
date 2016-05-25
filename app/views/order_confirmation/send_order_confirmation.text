@@ -1,0 +1,5 @@
+Thanks for your order, <%= @user.email %>
+
+Your order number is: <%= @order.id %>
+
+Your total: <%= @order.subtotal %>
